@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CaddyTime | Have a Caddie, Anytime, Any Course</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        caddy: {
+                            green: '#0b3d26',
+                            gold: '#d4af37',
+                            accent: '#1e5e3a',
+                            dark: '#082115',
+                            light: '#f4f7f5'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-overlay {
+            background: linear-gradient(180deg, rgba(8,33,21,0.85) 0%, rgba(11,61,38,0.7) 100%);
+        }
+    </style>
+</head>
+<body class="bg-caddy-light font-sans text-gray-800 antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-caddy-dark/95 backdrop-blur-md border-b border-caddy-gold/20 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 bg-caddy-gold rounded-full flex items-center justify-center font-bold text-caddy-dark text-xl shadow-lg">CT</div>
+                <span class="text-2xl font-bold tracking-tight">Caddy<span class="text-caddy-gold">Time</span></span>
+            </div>
+
+            <div class="hidden md:flex items-center space-x-8 text-sm font-semibold">
+                <a href="#book" class="hover:text-caddy-gold transition">Book a Caddie</a>
+                <a href="#about" class="hover:text-caddy-gold transition">About</a>
+                <a href="#partnerships" class="hover:text-caddy-gold transition">Partnerships</a>
+                <a href="#lounge" class="hover:text-caddy-gold transition flex items-center gap-1">
+                    <span class="inline-block w-2 h-2 rounded-full bg-caddy-gold animate-pulse"></span>
+                    Caddie Lounge
+                </a>
+                <a href="#contact" class="hover:text-caddy-gold transition">Contact</a>
+            </div>
+
+            <a href="#download" class="bg-caddy-gold text-caddy-dark px-5 py-2.5 rounded-full font-bold text-sm hover:bg-yellow-400 transition shadow-md">Get the App</a>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 md:pt-44 md:pb-36 bg-caddy-dark text-white overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1587174486073-ae5e5cff23aa?auto=format&fit=crop&w=1920&q=80" alt="Golf Course Fairway" class="w-full h-full object-cover opacity-25">
+            <div class="hero-overlay absolute inset-0"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <div class="inline-block bg-caddy-gold/10 border border-caddy-gold/40 rounded-full px-4 py-1.5 text-xs font-semibold text-caddy-gold tracking-wide">
+                    ON-DEMAND GOLF CADDIES
+                </div>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Have a Caddie, <br><span class="text-caddy-gold">Anytime, Any Course.</span>
+                </h1>
+                <p class="text-gray-300 text-lg max-w-xl">
+                    Elevate your round with professional, vetted caddies wherever you play. From casual club rounds to marquee celebrity pairings, your ultimate loop is just a tap away.
+                </p>
+
+                <div id="download" class="pt-4 flex flex-wrap gap-4">
+                    <a href="#" class="bg-black border border-gray-700 hover:border-caddy-gold px-6 py-3 rounded-xl flex items-center space-x-3 transition">
+                        <svg class="w-8 h-8 fill-current text-white" viewBox="0 0 384 512"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-92.1zM250.3 80c18.3-22.3 29.5-52.6 25.3-80-25.2 1.3-55 17.2-72.5 37.8-15.6 18.1-28.8 48.4-24.1 76.1 27.8 1.9 55.4-14.7 71.3-33.9z"/></svg>
+                        <div class="text-left">
+                            <div class="text-[10px] uppercase text-gray-400">Download on the</div>
+                            <div class="text-sm font-semibold">App Store</div>
+                        </div>
+                    </a>
+                    <a href="#" class="bg-black border border-gray-700 hover:border-caddy-gold px-6 py-3 rounded-xl flex items-center space-x-3 transition">
+                        <svg class="w-7 h-7 fill-current text-white" viewBox="0 0 512 512"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+                        <div class="text-left">
+                            <div class="text-[10px] uppercase text-gray-400">Get it on</div>
+                            <div class="text-sm font-semibold">Google Play</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center">
+                <div class="w-full max-w-md bg-caddy-green border border-caddy-gold/30 rounded-3xl p-4 shadow-2xl relative">
+                    <div class="relative h-96 rounded-2xl overflow-hidden group">
+                        <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?auto=format&fit=crop&w=800&q=80" alt="Caddie with CaddyTime Bib and Hat" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-caddy-dark via-transparent to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white">
+                            <span class="bg-caddy-gold text-caddy-dark text-xs font-extrabold px-2 py-1 rounded mb-2 inline-block">OFFICIAL CADDIE</span>
+                            <h3 class="text-xl font-bold">Verified CaddyTime Caddie</h3>
+                            <p class="text-xs text-gray-300">Custom branded gear • Course expertise • Instant booking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="book" class="py-20 max-w-7xl mx-auto px-6">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-caddy-dark">Book Your Round in Seconds</h2>
+            <p class="text-gray-600 mt-4">Whether you're visiting a premium resort or walking your local muni, CaddyTime connects you with course-ready caddies near you.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center space-y-4">
+                <div class="w-14 h-14 bg-caddy-green/10 text-caddy-green rounded-full flex items-center justify-center mx-auto text-2xl font-bold">1</div>
+                <h3 class="text-xl font-bold text-caddy-dark">Select Course & Date</h3>
+                <p class="text-gray-600 text-sm">Choose your course and tee time. The CaddyTime network automatically alerts verified caddies nearby.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center space-y-4">
+                <div class="w-14 h-14 bg-caddy-green/10 text-caddy-green rounded-full flex items-center justify-center mx-auto text-2xl font-bold">2</div>
+                <h3 class="text-xl font-bold text-caddy-dark">Match Your Loop</h3>
+                <p class="text-gray-600 text-sm">Review caddie ratings, experience, and player feedback before confirming your booking.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-gray-100 shadow-lg text-center space-y-4">
+                <div class="w-14 h-14 bg-caddy-green/10 text-caddy-green rounded-full flex items-center justify-center mx-auto text-2xl font-bold">3</div>
+                <h3 class="text-xl font-bold text-caddy-dark">Tee Off & Cashless Pay</h3>
+                <p class="text-gray-600 text-sm">Focus on your game. Payment, tipping, and ratings are seamlessly handled through the mobile app.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="lounge" class="py-20 bg-caddy-dark text-white border-y border-caddy-gold/30">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
+                <div>
+                    <span class="text-caddy-gold font-semibold tracking-wider text-sm uppercase">VIP Experience</span>
+                    <h2 class="text-3xl md:text-5xl font-bold mt-2">The Caddie Lounge</h2>
+                    <p class="text-gray-400 mt-2">Book legendary tour caddies, sports icons, and celebrities for an unforgettable round.</p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-caddy-green/50 border border-caddy-gold/20 rounded-2xl overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80" alt="Celebrity Caddie" class="h-64 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="text-xl font-bold">Marcus "Fluff" Vance</h3>
+                                <span class="text-caddy-gold text-sm font-semibold">★ 5.0</span>
+                            </div>
+                            <p class="text-xs text-caddy-gold">PGA Tour Veteran • 3x Major Winning Caddie</p>
+                            <p class="text-gray-300 text-sm mt-3">Read greens like a pro and hear tournament stories from 20+ years inside the ropes.</p>
+                        </div>
+                        <div class="space-y-3 pt-4 border-t border-gray-700">
+                            <label class="block text-xs text-gray-400">Select Date for Celebrity Round:</label>
+                            <input type="date" class="w-full bg-caddy-dark border border-gray-600 rounded-lg px-3 py-2 text-xs text-white focus:border-caddy-gold outline-none">
+                            <button class="w-full bg-caddy-gold text-caddy-dark font-bold py-2.5 rounded-lg text-sm hover:bg-yellow-400 transition">Request Celebrity Booking</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-caddy-green/50 border border-caddy-gold/20 rounded-2xl overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80" alt="Celebrity Caddie" class="h-64 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="text-xl font-bold">Dave "The Radar" Ellis</h3>
+                                <span class="text-caddy-gold text-sm font-semibold">★ 4.9</span>
+                            </div>
+                            <p class="text-xs text-caddy-gold">Golf Analyst & Trick Shot Specialist</p>
+                            <p class="text-gray-300 text-sm mt-3">Brings unmatched energy, course management strategy, and entertainment to your group.</p>
+                        </div>
+                        <div class="space-y-3 pt-4 border-t border-gray-700">
+                            <label class="block text-xs text-gray-400">Select Date for Celebrity Round:</label>
+                            <input type="date" class="w-full bg-caddy-dark border border-gray-600 rounded-lg px-3 py-2 text-xs text-white focus:border-caddy-gold outline-none">
+                            <button class="w-full bg-caddy-gold text-caddy-dark font-bold py-2.5 rounded-lg text-sm hover:bg-yellow-400 transition">Request Celebrity Booking</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-caddy-green/50 border border-caddy-gold/20 rounded-2xl overflow-hidden flex flex-col">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80" alt="Celebrity Caddie" class="h-64 w-full object-cover">
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="text-xl font-bold">Sarah Jenkins</h3>
+                                <span class="text-caddy-gold text-sm font-semibold">★ 5.0</span>
+                            </div>
+                            <p class="text-xs text-caddy-gold">Former LPGA Tour Player & Performance Coach</p>
+                            <p class="text-gray-300 text-sm mt-3">Get elite on-course mental coaching and yardage precision while you play.</p>
+                        </div>
+                        <div class="space-y-3 pt-4 border-t border-gray-700">
+                            <label class="block text-xs text-gray-400">Select Date for Celebrity Round:</label>
+                            <input type="date" class="w-full bg-caddy-dark border border-gray-600 rounded-lg px-3 py-2 text-xs text-white focus:border-caddy-gold outline-none">
+                            <button class="w-full bg-caddy-gold text-caddy-dark font-bold py-2.5 rounded-lg text-sm hover:bg-yellow-400 transition">Request Celebrity Booking</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partnerships" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-caddy-accent font-semibold tracking-wider text-sm uppercase">Golf Courses & Outings</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-caddy-dark">Partner with CaddyTime</h2>
+                    <p class="text-gray-600">
+                        Unlock a turnkey caddie program for your golf course, tournament, or resort without the administrative burden. CaddyTime handles recruitment, background checks, training, and payout scheduling.
+                    </p>
+
+                    <ul class="space-y-3 text-sm text-gray-700 font-medium">
+                        <li class="flex items-center gap-2">
+                            <span class="text-caddy-accent font-bold">✓</span> Zero overhead or administrative labor for Head Pros and Directors of Golf.
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-caddy-accent font-bold">✓</span> Branded CaddyTime uniforms (Bibs and Hats provided).
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-caddy-accent font-bold">✓</span> Seamless digital chit tracking and reciprocal accounting integration.
+                        </li>
+                    </ul>
+
+                    <a href="#contact" class="inline-block bg-caddy-green text-white font-bold px-8 py-3.5 rounded-xl hover:bg-caddy-dark transition shadow-lg">Become a Partner Course</a>
+                </div>
+
+                <div class="bg-caddy-light p-8 rounded-3xl border border-gray-200">
+                    <h3 class="text-xl font-bold text-caddy-dark mb-4">Request Course / Tournament Info</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Full Name" class="w-full p-3 rounded-lg border border-gray-300 text-sm outline-none focus:border-caddy-green">
+                        <input type="email" placeholder="Work Email" class="w-full p-3 rounded-lg border border-gray-300 text-sm outline-none focus:border-caddy-green">
+                        <input type="text" placeholder="Golf Facility / Organization Name" class="w-full p-3 rounded-lg border border-gray-300 text-sm outline-none focus:border-caddy-green">
+                        <textarea placeholder="Estimated annual rounds or tournament details..." rows="3" class="w-full p-3 rounded-lg border border-gray-300 text-sm outline-none focus:border-caddy-green"></textarea>
+                        <button type="submit" class="w-full bg-caddy-gold text-caddy-dark font-bold py-3 rounded-lg hover:bg-yellow-400 transition">Submit Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-caddy-light border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto space-y-6">
+                <h2 class="text-3xl font-bold text-caddy-dark">Preserving Golf Tradition with Modern Tech</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    CaddyTime was created to make the tradition of walking with a caddie accessible to every golfer, everywhere. By leveraging mobile technology, we empower courses to scale caddie availability on demand while creating flexible earning opportunities for caddies globally.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-caddy-dark text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-3xl font-bold">Get in Touch</h2>
+                <p class="text-gray-400 mt-3">Have questions about booking, partnering, or joining the CaddyTime roster?</p>
+
+                <div class="mt-8 space-y-4 text-sm text-gray-300">
+                    <p><strong>Corporate HQ:</strong> CaddyTime Global Inc.</p>
+                    <p><strong>Email:</strong> support@caddytime.com</p>
+                    <p><strong>Partnerships:</strong> partners@caddytime.com</p>
+                </div>
+            </div>
+
+            <div>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-caddy-green/40 border border-gray-700 text-white text-sm outline-none focus:border-caddy-gold">
+                    <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-caddy-green/40 border border-gray-700 text-white text-sm outline-none focus:border-caddy-gold">
+                    <textarea placeholder="Message" rows="4" class="w-full p-3 rounded-lg bg-caddy-green/40 border border-gray-700 text-white text-sm outline-none focus:border-caddy-gold"></textarea>
+                    <button type="submit" class="bg-caddy-gold text-caddy-dark font-bold px-8 py-3 rounded-lg hover:bg-yellow-400 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black py-8 text-center text-xs text-gray-500 border-t border-gray-800">
+        <p>© 2026 CaddyTime. All rights reserved. Registered domain: caddytime.com</p>
+    </footer>
+
+</body>
+</html>
